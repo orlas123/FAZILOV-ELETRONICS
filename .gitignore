@@ -1,4 +1,13 @@
-.DS_Store
+# Ignorar tudo
+*
+
+# Permitir arquivos HTML, CSS e JavaScript
+!*.html
+!*.css
+!*.js
+
+# Ignorar diretórios, exceto os que contêm arquivos permitidos
+!*/.DS_Store
 applet
 application.linux-arm64
 application.linux-armv6hf
