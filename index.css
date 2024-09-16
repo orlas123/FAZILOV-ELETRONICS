@@ -44,7 +44,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid white; /* Adiciona uma borda branca */
+    
     border-radius: 50%; /* Mantém a borda arredondada */
     padding: 10px; /* Adiciona um espaço interno */
     background-color: blue; /* Cor de fundo */
@@ -53,7 +53,7 @@ button:hover {
 /* Ajuste do logo */
 .imglogo {
     width: 100%; /* Ajusta a largura da imagem */
-    max-width: 200px; /* Tamanho máximo para telas grandes */
+    max-width: 400px; /* Tamanho máximo para telas grandes */
     height: auto; /* Mantém a proporção */
     border-radius: 60%; /* Borda arredondada para a imagem */
     margin-left: 3rem; /* Margem à esquerda */
