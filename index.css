@@ -1,136 +1,123 @@
-body {
+body{
     width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: blue;
+   padding: 0;
+  margin: 0;
+  background-color: blue;
 }
-
 .container {
-    padding: 20px;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-    color: white;
-}
+ 
+   padding: 20px;
+   max-width: 600px;
+   margin: 20px auto;
+   text-align: center;
+   color: white;
 
+}
 .item {
-    display: none; /* Esconde inicialmente todas as imagens */
-    margin: 10px 0;
+   display: none; /* Esconde inicialmente todas as imagens */
+   margin: 10px 0;
 }
-
 .item img {
-    width: 440px;
-    height: 370px;
-    margin-bottom: 10px;
+   width: 440px;
+   height: 370px;
+   margin-bottom: 10px;
 }
-
 button {
-    padding: 10px;
-    background-color: green;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 250px;
-    border-radius: 50px;
-    font-size: 14px;
-    margin-bottom: 2rem;
+   padding: 10px;
+   background-color:green;
+   color: white;
+   border: none;
+   cursor: pointer;
+   width: 250px;
+   border-radius: 50px;
+   font-size: 14px;
+   margin-bottom: 2rem;
 }
-
 button:hover {
-    background-color: red;
+   background-color:red;
+}
+.logo{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background-color: blue;
+  
+}
+.imglogo{
+   
+   border-radius: 60%;
+   margin-left: 3rem;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 50%; /* Mantém a borda arredondada */
-    padding: 10px; /* Adiciona um espaço interno */
-    background-color: blue; /* Cor de fundo */
-}
+.contato{
+   
+   display: flex;
+  flex-direction:row;
+  font-size: 34px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  width: 100%;
+ 
 
-/* Ajuste do logo */
-.imglogo {
-    width: 100%; /* Ajusta a largura da imagem */
-    max-width: 400px; /* Tamanho máximo para telas grandes */
-    height: auto; /* Mantém a proporção */
-    border-radius: 60%; /* Borda arredondada para a imagem */
-    margin-left: 3rem; /* Margem à esquerda */
+ 
+ 
+  
 }
-
-/* Media Queries para redimensionar o logo */
-@media (min-width: 601px) and (max-width: 900px) {
-    .imglogo {
-        max-width: 150px; /* Reduz o tamanho do logo em tablets */
-    }
+h5{
+   font-size: small;
 }
-
-@media (max-width: 600px) {
-    .imglogo {
-        max-width: 100px; /* Reduz ainda mais em dispositivos móveis */
-    }
+i{
+   font-size: 34px;
+   color: white;
 }
-
-.contato {
-    display: flex;
-    flex-direction: row;
-    font-size: 34px;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 10px;
-    color: white;
-    background-color: black;
-    width: 100%;
+.adresimg{
+   width: 110px;
 }
-
-h5 {
-    font-size: small;
+h1{
+   color: white;
+   margin-left: 2rem;
 }
-
-i {
-    font-size: 34px;
-    color: white;
-}
-
-.adresimg {
-    width: 110px;
-}
-
 h1 {
-    color: white;
-    margin-left: 2rem;
-    opacity: 0; /* Começa invisível */
-    animation: fadeIn 2s forwards; /* Aplica a animação */
+   opacity: 0; /* Começa invisível */
+   animation: fadeIn 2s forwards; /* Aplica a animação */
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0; /* Começa com opacidade 0 */
-        transform: translateY(-20px); /* Move para cima */
-    }
-    to {
-        opacity: 1; /* Termina com opacidade 1 */
-        transform: translateY(0); /* Volta à posição original */
-    }
+   from {
+       opacity: 0; /* Começa com opacidade 0 */
+       transform: translateY(-20px); /* Move para cima */
+   }
+   to {
+       opacity: 1; /* Termina com opacidade 1 */
+       transform: translateY(0); /* Volta à posição original */
+   }
 }
 
 /* Estilos padrão */
 h1 {
-    font-size: 24px;
+   font-size: 24px;
 }
 
 /* Estilos para tablets (largura entre 601px e 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
-    h1 {
-        font-size: 32px;
-    }
+   h1 {
+       font-size: 32px;
+   }
 }
 
 /* Estilos para desktops (largura acima de 900px) */
 @media (min-width: 901px) {
-    h1 {
-        font-size: 40px;
-    }
+   h1 {
+       font-size: 40px;
+   }
+}
+@media (min-width: 901px) {
+    .imglogo {
+    border-radius: 80%;
+   }
 }
