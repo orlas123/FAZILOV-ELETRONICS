@@ -1,21 +1,27 @@
-let indiceAtual = 0; // Índice da imagem atual
-const itens = document.querySelectorAll('.item'); // Seleciona todas as imagens na lista
+let currentImageIndex = 0;
+const images = document.querySelectorAll('.item');
+const showImageButton = document.getElementById('showImageButton');
 
-// Exibe a imagem inicial
-itens[indiceAtual].style.display = 'block';
-
-document.getElementById('showImageButton').addEventListener('click', function() {
-    // Oculta todas as imagens
-    itens.forEach(item => item.style.display = 'none');
-
-    // Verifica se o índice atual está dentro do array
-    if (indiceAtual < itens.length) {
-        // Exibe a imagem atual
-        itens[indiceAtual].style.display = 'block';
-        // Incrementa o índice para a próxima imagem
-        indiceAtual++;
-    } else {
-        // Se todas as imagens foram exibidas, reseta o índice
-        indiceAtual = 0;
-    }
+// Inicializa todas as imagens como invisíveis, exceto a primeira
+images.forEach((image, index) => {
+    image.style.display = index === 0 ? 'block' : 'none';
 });
+
+function showNextImage() {
+    // Esconde a imagem atual
+    if (currentImageIndex >= 0 && currentImageIndex < images.length) {
+        images[currentImageIndex].style.display = 'none';
+    }
+
+    // Mostra a próxima imagem
+    currentImageIndex++;
+    
+    if (currentImageIndex >= images.length) {
+        currentImageIndex = 0; // Reinicia para a primeira imagem
+    }
+
+    images[currentImageIndex].style.display = 'block'; // Exibe a próxima imagem
+}
+
+// Adiciona um evento de clique ao botão
+showImageButton.addEventListener('click', showNextImage);
