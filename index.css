@@ -40,12 +40,12 @@ button:hover {
      display: flex;
      align-items: center;
      justify-content: center;
-     border-radius: 50%;
+    
      background-color: blue;
   
 }
 .imglogo{
-   
+   width:980px
    border-radius: 60%;
    margin-left: 3rem;
 }
@@ -118,6 +118,6 @@ h1 {
 }
 @media (min-width: 901px) {
     .imglogo {
-    border-radius: 80%;
+    border-radius: 60%;
    }
 }
