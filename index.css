@@ -1,199 +1,258 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    width: 100%;
     padding: 0;
-    padding-top: 60px;
-    background-color: red;
+    margin: 0;
+    background-color: blue;
+    font-family: Arial, sans-serif;
 }
 
-/* Login */
-#loginContainer {
-    width: 295px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.container {
+    padding: 20px;
+    max-width: 470px;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    text-align: center;
-    margin-left: 30rem;
-    height: 350px; 
-    font-family: 'Times New Roman', Times, serif; 
-}
-#numero{
-    width: 200px;
-    height: 30px;
-    font-size: 16px;
-}
-#nome{
-    width: 200px;
-    height: 30px;
-    font-size: 16px;
+    border: 5px solid white;
+
+    padding: 10px;
+    background-color: blue;
 }
 
-.bx {
-    font-size: 40px;
+.imglogo {
+    width: 100%;
+    max-width: 250px;
+    /* Tamanho máximo para o logo */
+    height: auto;
+    border-radius: 60%;
 }
 
-/* Dados de perfil */
-#storeContainer {
-    margin-left: 2rem;
-    color: white;
+#listaDeImagens {
+    display: flex;
+    /* Usar flexbox para exibir imagens em linha */
+    overflow-x: auto;
+    /* Permite rolagem horizontal se necessário */
+    padding: 10px 0;
 }
 
-label {
-    margin-right: 8rem;
-
+.item {
+    display: flex;
+    /* Flex para centralizar o conteúdo */
+    flex-direction: column;
+    /* Coloca imagem e descrição em coluna */
+    margin: 0 10px;
+    /* Espaçamento entre as imagens */
 }
 
-#loginButton{
+.item img {
+    width: 440px;
+    /* Tamanho fixo para as imagens */
+    height: auto;
+}
+
+button {
+    padding: 10px;
+    background-color: green;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
     cursor: pointer;
-    background-color: red;
-    width: 68%;
-    margin-top: 3rem;
+    width: 250px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 20px 0;
 }
 
 button:hover {
-    background-color: #218838;
-}
-
-/* Navegação */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
     background-color: red;
 }
 
-nav ul {
-    list-style-type: none;
+.contato {
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 1rem;
-}
-
-nav ul li {
-    text-align: center;
-    flex: 1;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column; /* Coloca ícone e texto em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-}
-
-.saudacao {
-    width: 96%;
-    display: flex;
-    text-align: center;
+    flex-direction: inline;
     justify-content: center;
-    border-radius: 10px;
+    justify-content: space-between;
+    padding: 10px;
     color: white;
-    border: 2px solid white;
-    margin-left: 1.05rem;
-    animation: aumentar 1.5s infinite;
+    background-color: black;
+    width: 100%;
+
+    border-radius: 5px;
+
 }
 
-.informacao {
-    font-size: 24px;
-    margin-left: 2rem;
+i {
     color: white;
+    font-size: larger;
 }
 
-#products {
+.containner {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-    margin-right: 4rem;
-}
-
-.product {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    width: 245px;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    margin: 0;
+    margin-top: 2rem;
+
 }
 
-.imgprodoct {
-    width: 242px;
-    height: 230px;
-}
-
-.cart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-   margin-right: 30rem;
+h2 {
+    font-size: xx-large;
     text-align: center;
-    width: 100%;
-}
-#cartItems{
-   display: inline-block;
-   align-items: center;
-    list-style-type: none;
-    margin: 10px 0;
-    justify-content: right;
-}
-.add-to-cart{
-    background-color: red;
-    height: 30px;
-    border: 1px solid white;
     color: white;
-    border-radius: 5px;
-}
-#checkoutButton{
-    background-color: white;
-    width: 200px;
-    height: 35px;
-    border-radius: 5px;
-}
-.totalDecarinho{
-    font-size: 25px;
-    border: 1px solid white;
 }
 
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-#cartCount {
-    position: absolute;
-    top: 4px;
-    right: 845px;
-    font-size: 25px;
-    background-color: #218838;
-    border-radius: 50%;
 }
-#chatInput{
-    font-size: 24px;
-    border-radius: 50px;
+
+img {
+    width: 20em;
 }
-.messageElement{
-    
-    color: white;
-    border-radius: 50px;
+
+.adresimg {
+    width: 30px;
+    /* Ajuste o tamanho do ícone do endereço */
 }
 
 
 
+/* Media Queries para responsividade */
+@media (max-width: 900px) {
+    body {
+        text-align: center;
+        /* Centraliza todo o texto do corpo */
+    }
 
+    .logo {
+        margin-bottom: 20px;
+        /* Espaçamento abaixo do cabeçalho */
+    }
 
+    .imglogo {
+        max-width: 120px;
+        /* Reduz o tamanho do logo em telas menores */
+    }
 
+    h1,
+    h2 {
+        font-size: 1.5em;
+        /* Ajusta o tamanho da fonte dos títulos */
+    }
 
+    .containner {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que os produtos se movam para a linha seguinte */
+        justify-content: center;
+        /* Centraliza os produtos */
+    }
 
+    .produtos {
+        margin: 10px;
+        /* Espaçamento entre os produtos */
+        text-align: center;
+        /* Centraliza o texto dentro dos produtos */
+    }
+
+    .produtos img {
+        max-width: 100%;
+        /* Imagem ocupa 100% da largura do contêiner */
+        height: auto;
+        /* Mantém a proporção da imagem */
+    }
+
+    .container {
+        padding: 10px;
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    #listaDeImagens {
+        display: flex;
+        flex-direction: column;
+        /* Muda a direção para coluna em telas menores */
+        align-items: center;
+        /* Centraliza os itens */
+    }
+
+    .item {
+        margin: 10px 0;
+        /* Espaçamento entre as imagens */
+    }
+
+    .item img {
+        width: 100%;
+        /* Ajusta a largura das imagens */
+        max-width: 300px;
+        /* Tamanho máximo para as imagens */
+    }
+
+    button {
+        width: 200px;
+        /* Ajusta o tamanho do botão */
+        margin: 20px 0;
+        /* Espaçamento acima e abaixo do botão */
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        /* Muda a direção para coluna em telas menores */
+        align-items: center;
+        /* Centraliza os itens */
+        text-align: center;
+        /* Centraliza o texto */
+        margin-top: 20px;
+        /* Espaçamento acima da seção de contato */
+    }
+
+    .contato a {
+        margin: 5px 0;
+        /* Margem entre os links */
+    }
+}
+
+@media (max-width: 600px) {
+    .imglogo {
+        max-width: 100px;
+        /* Reduz ainda mais em dispositivos móveis */
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2em;
+        /* Ajusta o tamanho da fonte dos títulos */
+    }
+
+    button {
+        width: 100%;
+        /* Botão ocupa toda a largura */
+    }
+
+    .contato {
+        width: 100%;
+        /* Contato ocupa toda a largura */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    .item img {
+        max-width: 200px;
+        /* Tamanho máximo para as imagens em dispositivos móveis */
+    }
+}
